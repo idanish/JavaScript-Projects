@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Kalam:wght@300;400;700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Yatra+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: darkgrey;
+    background: linear-gradient( rgba(255, 145, 0, 0.815), rgba(255, 0, 0, 0.767));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box{
+margin: 10px 30px;
+font-size: 16px;
+}
+
+label{
+    font-size: 24px;
+}
+
+input{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    margin: 20px 10px;
+    width: 950px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 24px;
+
+}
+
+.btn{
+    width: 150px;
+    height: 50px;
+    border: 0;
+    border-radius: 4px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+}
+
+.btn:hover{
+    background-color: darkblue;
+}
+
+
+.txt-box{
+    width: 850;
+    height: 40px;
+    padding: 8PX 20px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 500;
+    color:whitesmoke;
+}
+
+
+#txt-1{
+    font-family: "Yatra One", system-ui;
+}
+
+#txt-2{
+    font-family: "Kalam", cursive;
+}
+
+#txt-3{
+    font-family: "Playwrite GB S", cursive;
+}
+
+#txt-4{
+    font-family: "Afacad Flux", sans-serif;
+}
+
+#txt-5{
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+#txt-6{
+    font-family: cursive;
+}
