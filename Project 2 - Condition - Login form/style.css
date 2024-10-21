@@ -11,19 +11,30 @@ body{
 .center{
     text-align: center;
     margin: 0 auto;
-    margin-top: 5vh;
+    margin-top: 20vh;
     padding: 20px 0;
     border: 1px solid;
-    width: 800px;
+    width: 450px;
 }
 
 h1{
     text-align: center;
 }
 
+.remember{
+    margin: 0 80px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.remember a{
+    margin-left: 60px;
+    
+}
 
 
-/* #changeNo{
+#changeNo{
     text-align: center;
     background-color: blueviolet;
     color: white;
@@ -34,7 +45,7 @@ h1{
     margin: 0 auto;
     margin-top: 5vh;
     margin-bottom: 15px;
-} */
+}
 
 
 button{
@@ -63,24 +74,3 @@ button:hover{
     margin: 5px 0;
     padding-left: 10px;
 }
-
-
-table{
-    margin: 15px 70px;
-}
-
-table th, td{
-    width: 200px;
-    padding: 15px;
-}
-
-table th{
-    background-color: dodgerblue;
-    color: white;
-}
-
-table td{
-background-color: lightblue;
-/* color: white; */
-}
-

@@ -6,24 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
 
     <div class="center">
-        <h1>LOGIN FORM</h1>
+        <h1>Submit Data</h1>
         </br>
 
-        <form action="page2.html">
-            <input type="text" placeholder="Username" id="username" class="txt-box"></br>
-            <input type="password" placeholder="Password" id="password" class="txt-box"></br>
-            <div class="remember"><input type="checkbox"> Remember Me? <a href="#">Forgot Password</a><br></div>
+        <form action="#">
+            <input type="text" placeholder="Username" id="txt-username" class="txt-box"></br>
+            <input type="text" placeholder="Full Name" id="txt-name" class="txt-box"></br>
+            <input type="text" placeholder="Email" id="txt-email" class="txt-box"></br>
 
-            <button onclick="login()" class="btn-login">Login</button>
+            <button type="submit" onclick="btnSubmit()" class="btn-login">Submit</button>
         </form>
-    <div>
 
+
+        <h1 id="a">a</h1>
+        <h1 id="b">b</h1>
+        <h1 id="c">c</h1>
+
+
+        <table>
+            <tr>
+                <th>S No.</th>
+                <th>Username</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+
+            <tr>
+                <td id="srNo"></td>
+                <td id="username"></td>
+                <td id="name"></td>
+                <td id="email"></td>
+            </tr>
+        </table>
+
+        <div>
+
+
+            <script src="script.js"></script>
 </body>
 
 </html>
