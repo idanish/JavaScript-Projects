@@ -6,6 +6,4 @@ function textChange() {
     document.getElementById('txt-4').innerText = a;
     document.getElementById('txt-5').innerText = a;
     document.getElementById('txt-6').innerText = a;
-    
-
 }

@@ -3,7 +3,9 @@ Here are some of my Javascript projects I have made during learning and Improvin
 
 # List of Projects
 
-1. Increment - Decrement
+1. Increment/Decrement
 2. Login Form
-3. Data Shown in Table using Array
+3. Getting Data and Display into Table using Array and Loop
 4. Text in different styles
+5. Custom Loop using If Condition
+6. Calculator

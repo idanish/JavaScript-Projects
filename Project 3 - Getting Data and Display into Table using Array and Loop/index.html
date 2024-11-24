@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Get Value from Data and Display into Table using Array and Loop</title>
+</head>
+
+<body>
+
+    <div class="center">
+        <h1>Submit Data</h1>
+        </br>
+
+        <form action="#">
+            <input type="text" placeholder="Username" id="txt-username" class="txt-box" required></br>
+            <input type="text" placeholder="Full Name" id="txt-name" class="txt-box" required></br>
+            <input type="email" placeholder="Email" id="txt-email" class="txt-box" required></br>
+
+            <button type="button" onclick="btnSubmit()" class="btn-submit">Submit</button>
+        </form>
+        
+
+        <table id="displayData">
+            <tr>
+                <th>S No.</th>
+                <th>Username</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>    
+        </table>
+        <div>
+
+
+            <script defer src="script.js"></script>
+</body>
+
+</html>
