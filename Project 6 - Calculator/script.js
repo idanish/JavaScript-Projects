@@ -1,11 +1,38 @@
-let display = document.getElementById("display").value;
-let num1 = document.getElementById("num1").value;
-const num2 = document.getElementById("num2").value;
+let buttons = document.querySelectorAll("button");
+let input = document.getElementById("display");
+let newArr = Array.from(buttons);
+console.log(newArr);
+let string = "";
+
+newArr.forEach(singleBtn => {
+
+    singleBtn.addEventListener("click", (e) => {
+        eventText = e.target.innerHTML
+
+        if (eventText == "=") {
+            input.value = eval(string);
+        } else if (eventText == "%") {
+            input.value = eval(string) / 100;
+        } else if (eventText == "AC") {
+            string = "";
+            input.value = "";
+        } else if (eventText == "DEL") {
+            string = string.substring(0, string.length - 1);
+            input.value = string;
+        } else {
+            string += eventText;
+            input.value = string;
+        }
 
 
-// display.innerHTML = num1;
-function distext (){
-    document.getElementById("distext").innerHTML = num1;
+
+
+    })
+});
+
+
+
+function empty() {
+    string = "";
+    input.value = "";
 }
-
-
