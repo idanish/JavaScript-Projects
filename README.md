@@ -9,3 +9,5 @@ Here are some of my Javascript projects I have made during learning and Improvin
 4. Text in different styles
 5. Custom Loop using If Condition
 6. Calculator
+7. tic tac toe
+8. Snake Lader Game
