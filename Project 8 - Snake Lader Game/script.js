@@ -10,8 +10,8 @@ let player1 = document.querySelectorAll("player1");
 let player2 = document.querySelectorAll("player2");
 let player3 = document.querySelectorAll("player3");
 let player4 = document.querySelectorAll("player4");
-let leftMargin = [-425,-365,-305,-245,-185,-125,-65,5,65,125];
-let topMargin = [520,460,400,340,280,220,160,100,40];
+let leftMargin = [-36.2,-31.2,-26.2,-21.2,-16.2,-11.2,-6.2,-1.2,3.8,8.8];
+let topMargin = [47.5,42.5,37.5,32.5,27.5,22.5,17.5,12.5,7.5,2.5];
 let lader = [5, 14, 42, 53, 64, 75];
 let snake = [38, 45, 51, 65, 91, 97];
 let diceP1 = 0;
@@ -43,7 +43,7 @@ function moveTog() {
     diceP1 == 80 ||
     diceP1 == 100
   ) {
-    p1tog.style.marginLeft = leftMargin[0] + "px";
+    p1tog.style.marginLeft = leftMargin[0] + "em";
   }
   if (
     diceP1 == 2 ||
@@ -57,7 +57,7 @@ function moveTog() {
     diceP1 == 79 ||
     diceP1 == 99
   ) {
-    p1tog.style.marginLeft = leftMargin[1] + "px";
+    p1tog.style.marginLeft = leftMargin[1] + "em";
   }
   if (
     diceP1 == 3 ||
@@ -71,7 +71,7 @@ function moveTog() {
     diceP1 == 78 ||
     diceP1 == 98
   ) {
-    p1tog.style.marginLeft = leftMargin[2] + "px";
+    p1tog.style.marginLeft = leftMargin[2] + "em";
   }
   if (
     diceP1 == 4 ||
@@ -85,7 +85,7 @@ function moveTog() {
     diceP1 == 77 ||
     diceP1 == 97
   ) {
-    p1tog.style.marginLeft = leftMargin[3] + "px";
+    p1tog.style.marginLeft = leftMargin[3] + "em";
   }
   if (
     diceP1 == 5 ||
@@ -99,7 +99,7 @@ function moveTog() {
     diceP1 == 76 ||
     diceP1 == 96
   ) {
-    p1tog.style.marginLeft = leftMargin[4] + "px";
+    p1tog.style.marginLeft = leftMargin[4] + "em";
   }
   if (
     diceP1 == 6 ||
@@ -113,7 +113,7 @@ function moveTog() {
     diceP1 == 75 ||
     diceP1 == 95
   ) {
-    p1tog.style.marginLeft = leftMargin[5] + "px";
+    p1tog.style.marginLeft = leftMargin[5] + "em";
   }
   if (
     diceP1 == 7 ||
@@ -127,7 +127,7 @@ function moveTog() {
     diceP1 == 74 ||
     diceP1 == 94
   ) {
-    p1tog.style.marginLeft = leftMargin[6] + "px";
+    p1tog.style.marginLeft = leftMargin[6] + "em";
   }
   if (
     diceP1 == 8 ||
@@ -141,7 +141,7 @@ function moveTog() {
     diceP1 == 73 ||
     diceP1 == 93
   ) {
-    p1tog.style.marginLeft = leftMargin[7] + "px";
+    p1tog.style.marginLeft = leftMargin[7] + "em";
   }
   if (
     diceP1 == 9 ||
@@ -155,7 +155,7 @@ function moveTog() {
     diceP1 == 72 ||
     diceP1 == 92
   ) {
-    p1tog.style.marginLeft = leftMargin[8] + "px";
+    p1tog.style.marginLeft = leftMargin[8] + "em";
   }
   if (
     diceP1 == 10 ||
@@ -169,37 +169,39 @@ function moveTog() {
     diceP1 == 71 ||
     diceP1 == 91
   ) {
-    p1tog.style.marginLeft = leftMargin[9] + "px";
+    p1tog.style.marginLeft = leftMargin[9] + "em";
   }
 
+  if (diceP1 >= 1) {
+    p1tog.style.marginTop = topMargin[0] + "em";
+  }
   if (diceP1 >= 11) {
-    p1tog.style.marginTop = topMargin[0] + "px";
+    p1tog.style.marginTop = topMargin[1] + "em";
   }
   if (diceP1 >= 21) {
-    p1tog.style.marginTop = topMargin[1] + "px";
+    p1tog.style.marginTop = topMargin[2] + "em";
   }
   if (diceP1 >= 31) {
-    p1tog.style.marginTop = topMargin[2] + "px";
+    p1tog.style.marginTop = topMargin[3] + "em";
   }
   if (diceP1 >= 41) {
-    p1tog.style.marginTop = topMargin[3] + "px";
+    p1tog.style.marginTop = topMargin[4] + "em";
   }
   if (diceP1 >= 51) {
-    p1tog.style.marginTop = topMargin[4] + "px";
+    p1tog.style.marginTop = topMargin[5] + "em";
   }
   if (diceP1 >= 61) {
-    p1tog.style.marginTop = topMargin[5] + "px";
+    p1tog.style.marginTop = topMargin[6] + "em";
   }
   if (diceP1 >= 71) {
-    p1tog.style.marginTop = topMargin[6] + "px";
+    p1tog.style.marginTop = topMargin[7] + "em";
   }
   if (diceP1 >= 81) {
-    p1tog.style.marginTop = topMargin[7] + "px";
+    p1tog.style.marginTop = topMargin[8] + "em";
   }
   if (diceP1 >= 91) {
-    p1tog.style.marginTop = topMargin[8] + "px";
+    p1tog.style.marginTop = topMargin[9] + "em";
   }
-
   //   dice 2
 
   if (
@@ -214,7 +216,7 @@ function moveTog() {
     diceP2 == 80 ||
     diceP2 == 100
   ) {
-    p2tog.style.marginLeft = leftMargin[0] + "px";
+    p2tog.style.marginLeft = leftMargin[0] + "em";
   }
   if (
     diceP2 == 2 ||
@@ -228,7 +230,7 @@ function moveTog() {
     diceP2 == 79 ||
     diceP2 == 99
   ) {
-    p2tog.style.marginLeft = leftMargin[1] + "px";
+    p2tog.style.marginLeft = leftMargin[1] + "em";
   }
   if (
     diceP2 == 3 ||
@@ -242,7 +244,7 @@ function moveTog() {
     diceP2 == 78 ||
     diceP2 == 98
   ) {
-    p2tog.style.marginLeft = leftMargin[2] + "px";
+    p2tog.style.marginLeft = leftMargin[2] + "em";
   }
   if (
     diceP2 == 4 ||
@@ -256,7 +258,7 @@ function moveTog() {
     diceP2 == 77 ||
     diceP2 == 97
   ) {
-    p2tog.style.marginLeft = leftMargin[3] + "px";
+    p2tog.style.marginLeft = leftMargin[3] + "em";
   }
   if (
     diceP2 == 5 ||
@@ -270,7 +272,7 @@ function moveTog() {
     diceP2 == 76 ||
     diceP2 == 96
   ) {
-    p2tog.style.marginLeft = leftMargin[4] + "px";
+    p2tog.style.marginLeft = leftMargin[4] + "em";
   }
   if (
     diceP2 == 6 ||
@@ -284,7 +286,7 @@ function moveTog() {
     diceP2 == 75 ||
     diceP2 == 95
   ) {
-    p2tog.style.marginLeft = leftMargin[5] + "px";
+    p2tog.style.marginLeft = leftMargin[5] + "em";
   }
   if (
     diceP2 == 7 ||
@@ -298,7 +300,7 @@ function moveTog() {
     diceP2 == 74 ||
     diceP2 == 94
   ) {
-    p2tog.style.marginLeft = leftMargin[6] + "px";
+    p2tog.style.marginLeft = leftMargin[6] + "em";
   }
   if (
     diceP2 == 8 ||
@@ -312,7 +314,7 @@ function moveTog() {
     diceP2 == 73 ||
     diceP2 == 93
   ) {
-    p2tog.style.marginLeft = leftMargin[7] + "px";
+    p2tog.style.marginLeft = leftMargin[7] + "em";
   }
   if (
     diceP2 == 9 ||
@@ -326,7 +328,7 @@ function moveTog() {
     diceP2 == 72 ||
     diceP2 == 92
   ) {
-    p2tog.style.marginLeft = leftMargin[8] + "px";
+    p2tog.style.marginLeft = leftMargin[8] + "em";
   }
   if (
     diceP2 == 10 ||
@@ -340,35 +342,38 @@ function moveTog() {
     diceP2 == 71 ||
     diceP2 == 91
   ) {
-    p2tog.style.marginLeft = leftMargin[9] + "px";
+    p2tog.style.marginLeft = leftMargin[9] + "em";
   }
 
+  if (diceP2 >= 1) {
+    p2tog.style.marginTop = topMargin[0] + "em";
+  }
   if (diceP2 >= 11) {
-    p2tog.style.marginTop = topMargin[0] + "px";
+    p2tog.style.marginTop = topMargin[1] + "em";
   }
   if (diceP2 >= 21) {
-    p2tog.style.marginTop = topMargin[1] + "px";
+    p2tog.style.marginTop = topMargin[2] + "em";
   }
   if (diceP2 >= 31) {
-    p2tog.style.marginTop = topMargin[2] + "px";
+    p2tog.style.marginTop = topMargin[3] + "em";
   }
   if (diceP2 >= 41) {
-    p2tog.style.marginTop = topMargin[3] + "px";
+    p2tog.style.marginTop = topMargin[4] + "em";
   }
   if (diceP2 >= 51) {
-    p2tog.style.marginTop = topMargin[4] + "px";
+    p2tog.style.marginTop = topMargin[5] + "em";
   }
   if (diceP2 >= 61) {
-    p2tog.style.marginTop = topMargin[5] + "px";
+    p2tog.style.marginTop = topMargin[6] + "em";
   }
   if (diceP2 >= 71) {
-    p2tog.style.marginTop = topMargin[6] + "px";
+    p2tog.style.marginTop = topMargin[7] + "em";
   }
   if (diceP2 >= 81) {
-    p2tog.style.marginTop = topMargin[7] + "px";
+    p2tog.style.marginTop = topMargin[8] + "em";
   }
   if (diceP2 >= 91) {
-    p2tog.style.marginTop = topMargin[8] + "px";
+    p2tog.style.marginTop = topMargin[9] + "em";
   }
 
   //   dice 3
@@ -385,7 +390,7 @@ function moveTog() {
     diceP3 == 80 ||
     diceP3 == 100
   ) {
-    p3tog.style.marginLeft = leftMargin[0] + "px";
+    p3tog.style.marginLeft = leftMargin[0] + "em";
   }
   if (
     diceP3 == 2 ||
@@ -399,7 +404,7 @@ function moveTog() {
     diceP3 == 79 ||
     diceP3 == 99
   ) {
-    p3tog.style.marginLeft = leftMargin[1] + "px";
+    p3tog.style.marginLeft = leftMargin[1] + "em";
   }
   if (
     diceP3 == 3 ||
@@ -413,7 +418,7 @@ function moveTog() {
     diceP3 == 78 ||
     diceP3 == 98
   ) {
-    p3tog.style.marginLeft = leftMargin[2] + "px";
+    p3tog.style.marginLeft = leftMargin[2] + "em";
   }
   if (
     diceP3 == 4 ||
@@ -427,7 +432,7 @@ function moveTog() {
     diceP3 == 77 ||
     diceP3 == 97
   ) {
-    p3tog.style.marginLeft = leftMargin[3] + "px";
+    p3tog.style.marginLeft = leftMargin[3] + "em";
   }
   if (
     diceP3 == 5 ||
@@ -441,7 +446,7 @@ function moveTog() {
     diceP3 == 76 ||
     diceP3 == 96
   ) {
-    p3tog.style.marginLeft = leftMargin[4] + "px";
+    p3tog.style.marginLeft = leftMargin[4] + "em";
   }
   if (
     diceP3 == 6 ||
@@ -455,7 +460,7 @@ function moveTog() {
     diceP3 == 75 ||
     diceP3 == 95
   ) {
-    p3tog.style.marginLeft = leftMargin[5] + "px";
+    p3tog.style.marginLeft = leftMargin[5] + "em";
   }
   if (
     diceP3 == 7 ||
@@ -469,7 +474,7 @@ function moveTog() {
     diceP3 == 74 ||
     diceP3 == 94
   ) {
-    p3tog.style.marginLeft = leftMargin[6] + "px";
+    p3tog.style.marginLeft = leftMargin[6] + "em";
   }
   if (
     diceP3 == 8 ||
@@ -483,7 +488,7 @@ function moveTog() {
     diceP3 == 73 ||
     diceP3 == 93
   ) {
-    p3tog.style.marginLeft = leftMargin[7] + "px";
+    p3tog.style.marginLeft = leftMargin[7] + "em";
   }
   if (
     diceP3 == 9 ||
@@ -497,7 +502,7 @@ function moveTog() {
     diceP3 == 72 ||
     diceP3 == 92
   ) {
-    p3tog.style.marginLeft = leftMargin[8] + "px";
+    p3tog.style.marginLeft = leftMargin[8] + "em";
   }
   if (
     diceP3 == 10 ||
@@ -511,35 +516,38 @@ function moveTog() {
     diceP3 == 71 ||
     diceP3 == 91
   ) {
-    p3tog.style.marginLeft = leftMargin[9] + "px";
+    p3tog.style.marginLeft = leftMargin[9] + "em";
   }
 
+  if (diceP3 >= 1) {
+    p3tog.style.marginTop = topMargin[0] + "em";
+  }
   if (diceP3 >= 11) {
-    p3tog.style.marginTop = topMargin[0] + "px";
+    p3tog.style.marginTop = topMargin[1] + "em";
   }
   if (diceP3 >= 21) {
-    p3tog.style.marginTop = topMargin[1] + "px";
+    p3tog.style.marginTop = topMargin[2] + "em";
   }
   if (diceP3 >= 31) {
-    p3tog.style.marginTop = topMargin[2] + "px";
+    p3tog.style.marginTop = topMargin[3] + "em";
   }
   if (diceP3 >= 41) {
-    p3tog.style.marginTop = topMargin[3] + "px";
+    p3tog.style.marginTop = topMargin[4] + "em";
   }
   if (diceP3 >= 51) {
-    p3tog.style.marginTop = topMargin[4] + "px";
+    p3tog.style.marginTop = topMargin[5] + "em";
   }
   if (diceP3 >= 61) {
-    p3tog.style.marginTop = topMargin[5] + "px";
+    p3tog.style.marginTop = topMargin[6] + "em";
   }
   if (diceP3 >= 71) {
-    p3tog.style.marginTop = topMargin[6] + "px";
+    p3tog.style.marginTop = topMargin[7] + "em";
   }
   if (diceP3 >= 81) {
-    p3tog.style.marginTop = topMargin[7] + "px";
+    p3tog.style.marginTop = topMargin[8] + "em";
   }
   if (diceP3 >= 91) {
-    p3tog.style.marginTop = topMargin[8] + "px";
+    p3tog.style.marginTop = topMargin[9] + "em";
   }
 
   //   dice 4
@@ -556,7 +564,7 @@ function moveTog() {
     diceP4 == 80 ||
     diceP4 == 100
   ) {
-    p4tog.style.marginLeft = leftMargin[0] + "px";
+    p4tog.style.marginLeft = leftMargin[0] + "em";
   }
   if (
     diceP4 == 2 ||
@@ -570,7 +578,7 @@ function moveTog() {
     diceP4 == 79 ||
     diceP4 == 99
   ) {
-    p4tog.style.marginLeft = leftMargin[1] + "px";
+    p4tog.style.marginLeft = leftMargin[1] + "em";
   }
   if (
     diceP4 == 3 ||
@@ -584,7 +592,7 @@ function moveTog() {
     diceP4 == 78 ||
     diceP4 == 98
   ) {
-    p4tog.style.marginLeft = leftMargin[2] + "px";
+    p4tog.style.marginLeft = leftMargin[2] + "em";
   }
   if (
     diceP4 == 4 ||
@@ -598,7 +606,7 @@ function moveTog() {
     diceP4 == 77 ||
     diceP4 == 97
   ) {
-    p4tog.style.marginLeft = leftMargin[3] + "px";
+    p4tog.style.marginLeft = leftMargin[3] + "em";
   }
   if (
     diceP4 == 5 ||
@@ -612,7 +620,7 @@ function moveTog() {
     diceP4 == 76 ||
     diceP4 == 96
   ) {
-    p4tog.style.marginLeft = leftMargin[4] + "px";
+    p4tog.style.marginLeft = leftMargin[4] + "em";
   }
   if (
     diceP4 == 6 ||
@@ -626,7 +634,7 @@ function moveTog() {
     diceP4 == 75 ||
     diceP4 == 95
   ) {
-    p4tog.style.marginLeft = leftMargin[5] + "px";
+    p4tog.style.marginLeft = leftMargin[5] + "em";
   }
   if (
     diceP4 == 7 ||
@@ -640,7 +648,7 @@ function moveTog() {
     diceP4 == 74 ||
     diceP4 == 94
   ) {
-    p4tog.style.marginLeft = leftMargin[6] + "px";
+    p4tog.style.marginLeft = leftMargin[6] + "em";
   }
   if (
     diceP4 == 8 ||
@@ -654,7 +662,7 @@ function moveTog() {
     diceP4 == 73 ||
     diceP4 == 93
   ) {
-    p4tog.style.marginLeft = leftMargin[7] + "px";
+    p4tog.style.marginLeft = leftMargin[7] + "em";
   }
   if (
     diceP4 == 9 ||
@@ -668,7 +676,7 @@ function moveTog() {
     diceP4 == 72 ||
     diceP4 == 92
   ) {
-    p4tog.style.marginLeft = leftMargin[8] + "px";
+    p4tog.style.marginLeft = leftMargin[8] + "em";
   }
   if (
     diceP4 == 10 ||
@@ -682,35 +690,38 @@ function moveTog() {
     diceP4 == 71 ||
     diceP4 == 91
   ) {
-    p4tog.style.marginLeft = leftMargin[9] + "px";
+    p4tog.style.marginLeft = leftMargin[9] + "em";
   }
 
+  if (diceP4 >= 1) {
+    p4tog.style.marginTop = topMargin[0] + "em";
+  }
   if (diceP4 >= 11) {
-    p4tog.style.marginTop = topMargin[0] + "px";
+    p4tog.style.marginTop = topMargin[1] + "em";
   }
   if (diceP4 >= 21) {
-    p4tog.style.marginTop = topMargin[1] + "px";
+    p4tog.style.marginTop = topMargin[2] + "em";
   }
   if (diceP4 >= 31) {
-    p4tog.style.marginTop = topMargin[2] + "px";
+    p4tog.style.marginTop = topMargin[3] + "em";
   }
   if (diceP4 >= 41) {
-    p4tog.style.marginTop = topMargin[3] + "px";
+    p4tog.style.marginTop = topMargin[4] + "em";
   }
   if (diceP4 >= 51) {
-    p4tog.style.marginTop = topMargin[4] + "px";
+    p4tog.style.marginTop = topMargin[5] + "em";
   }
   if (diceP4 >= 61) {
-    p4tog.style.marginTop = topMargin[5] + "px";
+    p4tog.style.marginTop = topMargin[6] + "em";
   }
   if (diceP4 >= 71) {
-    p4tog.style.marginTop = topMargin[6] + "px";
+    p4tog.style.marginTop = topMargin[7] + "em";
   }
   if (diceP4 >= 81) {
-    p4tog.style.marginTop = topMargin[7] + "px";
+    p4tog.style.marginTop = topMargin[8] + "em";
   }
   if (diceP4 >= 91) {
-    p4tog.style.marginTop = topMargin[8] + "px";
+    p4tog.style.marginTop = topMargin[9] + "em";
   }
 }
 
@@ -1046,8 +1057,8 @@ function diceNum() {
 
   if (diceP1 >= 100) {
     diceP1 = 100;
-    p1tog.style.marginLeft = leftMargin[0] + "px";
-    p1tog.style.marginTop = topMargin[8] + "px";
+    p1tog.style.marginLeft = leftMargin[0] + "em";
+    p1tog.style.marginTop = topMargin[8] + "em";
     console.log("Game Won by Player 1");
     document.getElementById("msg").innerText = "Won by Player 1";
     document.getElementById("dice").style.display = "none";
@@ -1059,8 +1070,8 @@ function diceNum() {
   }
   if (diceP2 >= 100) {
     diceP2 = 100;
-    p2tog.style.marginLeft = leftMargin[0] + "px";
-    p2tog.style.marginTop = topMargin[8] + "px";
+    p2tog.style.marginLeft = leftMargin[0] + "em";
+    p2tog.style.marginTop = topMargin[8] + "em";
     console.log("Game Won by Player 2");
     document.getElementById("msg").innerText = "Won by Player 2";
     document.getElementById("dice").style.display = "none";
@@ -1072,8 +1083,8 @@ function diceNum() {
   }
   if (diceP3 >= 100) {
     diceP3 = 100;
-    p3tog.style.marginLeft = leftMargin[0] + "px";
-    p3tog.style.marginTop = topMargin[8] + "px";
+    p3tog.style.marginLeft = leftMargin[0] + "em";
+    p3tog.style.marginTop = topMargin[8] + "em";
     console.log("Game Won by Player 3");
     document.getElementById("msg").innerText = "Won by Player 3";
     document.getElementById("dice").style.display = "none";
@@ -1085,8 +1096,8 @@ function diceNum() {
   }
   if (diceP4 >= 100) {
     diceP4 = 100;
-    p4tog.style.marginLeft = leftMargin[0] + "px";
-    p4tog.style.marginTop = topMargin[8] + "px";
+    p4tog.style.marginLeft = leftMargin[0] + "em";
+    p4tog.style.marginTop = topMargin[8] + "em";
     console.log("Game Won by Player 4");
     document.getElementById("msg").innerText = "Won by Player 4";
     document.getElementById("dice").style.display = "none";
@@ -1105,14 +1116,14 @@ function start() {
   diceP3 = 0;
   diceP4 = 0;
 
-  p1tog.style.marginTop = 540 + "px";
-  p2tog.style.marginTop = 540 + "px";
-  p3tog.style.marginTop = 570 + "px";
-  p4tog.style.marginTop = 570 + "px";
-  p1tog.style.marginLeft = -485 + "px";
-  p2tog.style.marginLeft = -525 + "px";
-  p3tog.style.marginLeft = -485 + "px";
-  p4tog.style.marginLeft = -525 + "px";
+  p1tog.style.marginTop = 46.1 + "em";
+  p2tog.style.marginTop = 46.1 + "em";
+  p3tog.style.marginTop = 48.1 + "em";
+  p4tog.style.marginTop = 48.1 + "em";
+  p1tog.style.marginLeft = -40.6 + "em";
+  p2tog.style.marginLeft = -43.6 + "em";
+  p3tog.style.marginLeft = -40.6 + "em";
+  p4tog.style.marginLeft = -43.6 + "em";
   document.getElementById("scoreP1").innerHTML = "";
   document.getElementById("scoreP2").innerHTML = "";
   document.getElementById("scoreP3").innerHTML = "";
@@ -1120,5 +1131,5 @@ function start() {
   turn_p1 = true;
   document.getElementById("dice").style.display = "block";
   document.getElementById("msg").innerText = "";
-  // document.getElementById("reset").style.display = "none";
+  document.getElementById("reset").style.display = "none";
 }
